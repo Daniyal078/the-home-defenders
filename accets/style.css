@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-width: 360px;
+    height: 100vh;
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --sea-green: #A7E0DA;
+    --light-blue: #E1F8FF;
+    --light-yellow: #FBEBB8;
+    --light-green: #F4F8EE;
+}
+
+.bg-sea-green{
+    background-color: var(--sea-green);
+}
+
+.bg-light-blue{
+    background-color: var(--light-blue);
+}
+.bg-light-yellow{
+    background-color: var(--light-yellow);
+}
+.bg-light-green{
+    background-color: var(--light-green);
+}
