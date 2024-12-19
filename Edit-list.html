@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="accets/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="accets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+
+<body>
+    <div class="mask"></div>
+    <section class="p-2 bg-light">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-2 col-lg-2 col-md-4 p-0 side-bar-main rounded-4 bg-black">
+                    <div class="text-white p-2 h-100 side-bar position-relative">
+                        <div><i
+                                class="bg-white p-2 rounded-2 fa-solid fa-bars text-black mt-3 ms-3 sidenav-close d-lg-none"></i>
+                        </div>
+                        <div class="py-4">
+                            <img src="accets/images/main-logo.png" width="100%" alt="">
+                        </div>
+                        <ul class="p-0">
+                            <a href="Home.html">
+                                <li class="ps-2 fs-sm py-2 my-3 navs"><img src="accets/images/Template.png" width="20"
+                                        alt="">&nbsp;&nbsp; Dashboard</li>
+                            </a>
+                            <a href="All-List.html">
+                                <li class="ps-2 fs-sm py-2 active my-3 navs"><img src="accets/images/Group 630.png"
+                                        width="20" alt="">&nbsp;&nbsp; All Listings</li>
+                            </a>
+                            <a href="Contact-Log-Types.html">
+                                <li class="ps-2 fs-sm py-2 my-3 navs"><img src="accets/images/Group 631.png" width="20"
+                                        alt="">&nbsp;&nbsp; Contact logs</li>
+                            </a>
+                            <a href="#">
+                                <li class="ps-2 fs-sm py-2 my-3 navs"><img src="accets/images/Group 632.png" width="20"
+                                        alt="">&nbsp;&nbsp; Authentication</li>
+                            </a>
+                            <a href="#">
+                                <li class="ps-2 fs-sm py-2 my-3 navs"><img src="accets/images/Group 628.png" width="20"
+                                        alt="">&nbsp;&nbsp; Lead Center</li>
+                            </a>
+                           <a href="Scripts.html">
+                                <li class="ps-2 fs-sm py-2 my-3 navs"><img src="accets/images/Group 634.png" width="20"
+                                        alt="">&nbsp;&nbsp; Scripts</li>
+                            </a>
+                            <a href="Settings.html">
+                                <li class="ps-2 fs-sm py-2 my-3 navs"><img src="accets/images/Group 635.png" width="20"
+                                        alt="">&nbsp;&nbsp; Settings</li>
+                            </a>
+                            <a href="Text-Templates.html">
+                                <li class="ps-2 fs-sm py-2 my-3 navs"><img src="accets/images/Group 636.png" width="20"
+                                        alt="">&nbsp;&nbsp; Text Templates</li>
+                            </a>
+                            <a href="#">
+                                <li class="ps-2 fs-sm py-2 my-3 navs"><img src="accets/images/Group 637.png" width="20"
+                                        alt="">&nbsp;&nbsp; File Manager</li>
+                            </a>
+                            <a href="Blogs.html">
+                                <li class="ps-2 fs-sm py-2 my-3 navs"><img src="accets/images/Group 638.png" width="20"
+                                        alt="">&nbsp;&nbsp; Blogs</li>
+                            </a>
+                            <a href="Email-templates.html">
+                                <li class="ps-2 fs-sm py-2 my-3 navs"><img src="accets/images/Group 639.png" width="20"
+                                        alt="">&nbsp;&nbsp; Email Template</li>
+                            </a>
+                            <a href="Property-types.html">
+                                <li class="ps-2 fs-sm py-2 my-3 navs"><img src="accets/images/Group 640.png" width="20"
+                                        alt="">&nbsp;&nbsp; Property Types</li>
+                            </a>
+                            <a class="position-absolute bottom-0" href="#">
+                                <li class="px-2 fs-sm py-2 text-danger my-3"><img src="accets/images/Vector.png"
+                                        width="20" alt="">&nbsp;&nbsp; Log Out</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12">
+                    <div class="d-flex justify-content-between align-items-center py-1 py-3 px-1">
+                        <div><i class="bg-white p-2 rounded-2 fa-solid fa-bars sidenav-tog d-lg-none"></i></div>
+                        <div class="d-flex align-items-center gap-3">
+                            <i class="bg-white p-2 rounded-2 fa-solid fa-magnifying-glass"></i>
+                            <i class="bg-white p-2 rounded-2 fa-regular fa-bell"></i>
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="bg-light-yellow rounded-circle overflow-hidden">
+                                    <img src="accets/images/Avatar 6.png" width="40" alt="">
+                                </div>
+                                <div class="fw-semibold">Ferdous Parker</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rounded-4 edit-list">
+                        <div class="bg-white p-3 rounded-4">
+                            <div class="row justify-content-md-between justify-content-center mb-4">
+                                <div class="col-md-auto my-2">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto text-info fw-bold">Listings</div>
+                                        <div class="col-auto fw-medium">Edit listings</div>
+                                        <div class="col-auto text-info fw-medium"><i
+                                                class="fa-solid fa-left-long"></i><a href="Home.html"> Back to all
+                                                listings </a></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-auto my-2">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto text-info fw-medium"><a href="Home.html">Admin</a></div> /
+                                        <div class="col-auto text-info fw-medium"><a href="Home.html">listings</a></div>
+                                        /
+                                        <div class="col-auto fw-medium">Edit</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-auto col-md-6 my-3">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img src="accets/images/Layer_1 (2).png" alt="">
+                                        <div class="fw-bold">Owner Name: <span class="fw-normal"> Carlos Fonte</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-auto col-md-6 my-3">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img src="accets/images/Group 1000001913.png" alt="">
+                                        <div class="fw-bold">Auction Date: <span class="fw-normal"> 04/08/2025 10:00 AM
+                                                ET</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-auto col-md-6 my-3">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img src="accets/images/Group 1000001920.png" alt="">
+                                        <div class="fw-bold">Listing Address: <span class="fw-normal"> 133rd st Miami fl
+                                                33176</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-auto col-md-6 my-3">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img src="accets/images/Layer_1.png" alt="">
+                                        <div class="fw-bold">Mailing Address: <span class="fw-normal"> 133rd st Miami fl
+                                                33176</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-auto col-md-6 my-3">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img src="accets/images/Group 1000001972.png" alt="">
+                                        <div class="fw-bold">Final Amount: <span class="fw-normal"> $0.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-4 p-3 my-3">
+                            <div id="exTab1" class="">
+                                <ul class="nav nav-pills d-flex flex-nowrap align-items-center gap-4 mb-4 overflow-auto">
+                                    <li class="text-nowrap active"><a href="#1a" data-toggle="tab">Profile</a></li>
+                                    <li class="text-nowrap"><a href="#2a" data-toggle="tab">Contact Logs</a></li>
+                                    <li class="text-nowrap"><a href="#3a" data-toggle="tab">SkpTrace</a></li>
+                                    <li class="text-nowrap"><a href="#4a" data-toggle="tab">Document</a></li>
+                                </ul>
+
+
+                                <div class="tab-content clearfix">
+                                    <div class="tab-pane active" id="1a">
+                                        <div class="row mb-4">
+                                            <div class="col-md-auto col-6 my-2">
+                                                <label class="fw-bold mb-1" for="">Agent</label>
+                                                <select name="" id=""
+                                                    class="form-select rounded-pill border border-black pe-5">
+                                                    <option value="">Select a Agent</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-auto col-6 my-2">
+                                                <label class="fw-bold mb-1" for="">Caller</label>
+                                                <select name="" id=""
+                                                    class="form-select rounded-pill border border-black pe-5">
+                                                    <option value="">Select a Caller</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-auto col-6 my-2">
+                                                <label class="fw-bold mb-1" for="">Assign To</label>
+                                                <select name="" id=""
+                                                    class="form-select rounded-pill border border-black pe-5">
+                                                    <option value="">Select a Assign to</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-auto col-6 my-2">
+                                                <label class="fw-bold mb-1" for="">Status</label>
+                                                <select name="" id=""
+                                                    class="form-select rounded-pill border border-black pe-5">
+                                                    <option value="">Not Started</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-auto col-6 my-2">
+                                                <label class="fw-bold mb-1" for="">Deal type</label>
+                                                <select name="" id=""
+                                                    class="form-select rounded-pill border border-black pe-5">
+                                                    <option value="">Fix & Flip</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-auto col-6 my-2">
+                                                <label class="fw-bold mb-1" for="">Auction type</label>
+                                                <select name="" id=""
+                                                    class="form-select rounded-pill border border-black pe-5">
+                                                    <option value="">FORECLOSURE</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-auto col-6 my-2">
+                                                <label class="fw-bold mb-1" for="">Case no</label>
+                                                <select name="" id=""
+                                                    class="form-select rounded-pill border border-black pe-5">
+                                                    <option value="">CACE-24-005904</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-auto col-6 my-2">
+                                                <label class="fw-bold mb-1" for="">Address 1</label>
+                                                <select name="" id=""
+                                                    class="form-select rounded-pill border border-black pe-5">
+                                                    <option value="">Miami</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-auto col-6 my-2">
+                                                <label class="fw-bold mb-1" for="">Address 2</label>
+                                                <select name="" id=""
+                                                    class="form-select rounded-pill border border-black pe-5">
+                                                    <option value="">Miami</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6 col-12 my-2">
+                                                <label class="fw-bold mb-1" for="">Owner name</label>
+                                                <input type="text"
+                                                    class="form-control rounded-pill border border-black">
+                                            </div>
+                                            <div class="col-md-6 col-12 my-2">
+                                                <label class="fw-bold mb-1" for="">Phone</label>
+                                                <input type="text"
+                                                    class="form-control rounded-pill border border-black">
+                                            </div>
+                                            <div class="col-lg-2 col-md-3 col-6 my-2">
+                                                <label class="fw-bold mb-1" for="">Final amount</label>
+                                                <input type="text"
+                                                    class="form-control rounded-pill border border-black">
+                                            </div>
+                                            <div class="col-lg-2 col-md-3 col-6 my-2">
+                                                <label class="fw-bold mb-1" for="">Max bid</label>
+                                                <input type="text"
+                                                    class="form-control rounded-pill border border-black">
+                                            </div>
+                                            <div class="col-lg-2 col-md-3 col-6 my-2">
+                                                <label class="fw-bold mb-1" for="">Assessed val</label>
+                                                <input type="text"
+                                                    class="form-control rounded-pill border border-black">
+                                            </div>
+                                            <div class="col-lg-2 col-md-3 col-6 my-2">
+                                                <label class="fw-bold mb-1" for="">Opening bid</label>
+                                                <input type="text"
+                                                    class="form-control rounded-pill border border-black">
+                                            </div>
+                                            <div class="col-lg-2 col-md-3 col-6 my-2">
+                                                <label class="fw-bold mb-1" for="">List type</label>
+                                                <input type="text"
+                                                    class="form-control rounded-pill border border-black">
+                                            </div>
+                                            <div class="col-lg-2 col-md-3 col-6 my-2">
+                                                <label class="fw-bold mb-1" for="">Certificate</label>
+                                                <input type="text"
+                                                    class="form-control rounded-pill border border-black">
+                                            </div>
+                                            <div class="col-lg-2 col-md-3 col-6 my-2">
+                                                <label class="fw-bold mb-1" for="">Auction time</label>
+                                                <input type="text"
+                                                    class="form-control rounded-pill border border-black">
+                                            </div>
+                                            <div class="col-lg-2 col-md-3 col-6 my-2">
+                                                <label class="fw-bold mb-1" for="">Zillow</label>
+                                                <select name="" id=""
+                                                    class="form-select rounded-pill border border-black pe-5">
+                                                    <option value="">Auction</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-2 col-md-3 col-6 my-2">
+                                                <label class="fw-bold mb-1" for="">Docket</label>
+                                                <select name="" id=""
+                                                    class="form-select rounded-pill border border-black pe-5">
+                                                    <option value="">Attached</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-2 col-md-3 col-6 my-2">
+                                                <label class="fw-bold mb-1" for="">Skip Trace</label>
+                                                <select name="" id=""
+                                                    class="form-select rounded-pill border border-black pe-5">
+                                                    <option value="">Skip Trace</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="2a">
+                                        <div class="overflow-auto">
+                                            <table class="table border border-black w-100">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="fs-sm text-nowrap">Date</th>
+                                                        <th class="fs-sm text-nowrap">Log Type</th>
+                                                        <th class="fs-sm text-nowrap">Method</th>
+                                                        <th class="fs-sm text-nowrap">Follow Up</th>
+                                                        <th class="fs-sm text-nowrap">Assigned</th>
+                                                        <th class="fs-sm text-nowrap">Subject</th>
+                                                        <th class="fs-sm text-nowrap">Notes</th>
+                                                        <th class="fs-sm text-nowrap">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="fs-sm text-nowrap">2024-12-10 10:27:26</td>
+                                                        <td class="fs-sm text-nowrap">Re-visit Property</td>
+                                                        <td class="fs-sm text-nowrap">In Person</td>
+                                                        <td class="fs-sm text-nowrap">3123-12-12</td>
+                                                        <td class="fs-sm text-nowrap">Ernie Garcia</td>
+                                                        <td class="fs-sm text-nowrap">Test</td>
+                                                        <td class="fs-sm text-nowrap">Test</td>
+                                                        <td class="fs-sm text-nowrap"><i class="fa-regular fa-message"></i>
+                                                            <i class="fa-regular fa-pen-to-square"></i>
+                                                            <i class="fa-regular fa-trash-can"></i>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <button class="btn btn-dark rounded-pill px-4 my-4"><i
+                                                    class="fa-solid fa-plus"></i> <a href="add-log.html"> Add
+                                                    log</a></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="3a">
+                                        <div class="row mb-4 align-items-end">
+                                            <div class="col-md-auto my-2">
+                                                <label class="fw-bold mb-1" for="">Address</label>
+                                                <input type="text"
+                                                    class="form-control rounded-pill border border-black">
+                                            </div>
+                                            <div class="col-md-auto my-2">
+                                                <label class="fw-bold mb-1" for="">City</label>
+                                                <input type="text"
+                                                    class="form-control rounded-pill border border-black">
+                                            </div>
+                                            <div class="col-md-auto my-2">
+                                                <label class="fw-bold mb-1" for="">zip</label>
+                                                <input type="text"
+                                                    class="form-control rounded-pill border border-black">
+                                            </div>
+                                            <div class="col-md-auto my-2">
+                                                <button class="btn btn-dark rounded-pill">Fetch Skip Trace Data</button>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="4a">
+                                        <div class="row mb-4 align-items-end">
+                                            <div class="col-md-5 col-6 my-2">
+                                                <label class="fw-bold mb-1" for="">Document Label</label>
+                                                <input type="text"
+                                                    class="form-control rounded-pill border border-black">
+                                            </div>
+                                            <div class="col-md-5 col-6 my-2">
+                                                <label class="fw-bold mb-1" for="">Select Document</label>
+                                                <input type="text"
+                                                    class="form-control rounded-pill border border-black">
+                                            </div>
+                                            <div class="col-md-2 my-2">
+                                                <button class="btn btn-dark w-100 rounded-pill">Save</button>
+                                            </div>
+                                            <table class="table table-bordered border-black mt-3">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="fs-sm">Document Label</th>
+                                                        <th class="fs-sm">Document</th>
+                                                        <th class="fs-sm">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="fs-sm">Test</td>
+                                                        <td class="fs-sm">Shoe-FLix-and-fragnance.png</td>
+                                                        <td class="fs-sm"><button
+                                                                class="btn btn-sm btn-danger rounded-pill">Delete</button>
+                                                        </td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <button class="btn btn-info rounded-pill px-4 text-white"><i
+                                        class="fa-solid fa-floppy-disk"></i> Save and Back</button>
+                                <button class="btn btn-dark rounded-pill px-4 text-white"><i
+                                        class="fa-regular fa-circle-xmark"></i> cancel</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="accets/script.js"></script>
+
+</body>
+
+</html>
